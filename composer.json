@@ -1,6 +1,6 @@
 {
-    "name": "deschdanja/deschdanja-Class-Builder",
-    "description": "BuildClasses in PHP with OOP",
+    "name": "deschdanja/deschdanja-class-builder",
+    "description": "build classes in PHP with OOP",
     "authors": [
         {
             "name": "Theodor Stoll",
@@ -14,6 +14,4 @@
             "deschdanja": ""
         }
     }
-
-
 }
