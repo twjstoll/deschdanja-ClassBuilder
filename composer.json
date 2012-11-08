@@ -1,6 +1,6 @@
 {
-    "name": "deschdanja/deschdanja-a-o-p",
-    "description": "Description of project deschdanja-AOP.",
+    "name": "deschdanja/deschdanja-Class-Builder",
+    "description": "BuildClasses in PHP with OOP",
     "authors": [
         {
             "name": "Theodor Stoll",
@@ -8,7 +8,7 @@
         }
     ],
     "license": "Apache-2.0",
-        
+    
     "autoload": {
         "psr-0": {
             "deschdanja": ""
