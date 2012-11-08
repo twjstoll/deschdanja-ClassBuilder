@@ -35,6 +35,21 @@ interface IClassBuilder {
      * @return string
      */
     public function getDumpString();
+    
+    /**
+     * @return array containing IParameter
+     */
+    public function getParameters();
+    
+    /**
+     * @return array containing IMethod
+     */
+    public function getMethods();
+    
+    /**
+     * @return array containing Interface names
+     */
+    public function getInterfaceNames();
 
     /**
      * set whether class abstract or not

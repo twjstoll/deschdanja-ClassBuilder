@@ -16,6 +16,8 @@ class Parameter implements IParameter{
     protected $hasDefault = false;
     protected $defaultValue = NULL;
 
+    protected $static = false;
+    
     protected $description = "";
 
     /**
@@ -50,7 +52,11 @@ class Parameter implements IParameter{
         $dump .= preg_replace('/\r\n|\r|\n/', "\n * ", $this->description)."\n * ";
         $dump .= "@var ".$this->type.' $'.$this->name;
         $dump .= "\n */\n";
-        $dump .= $this->access . ' $'. $this->name;
+        $dump .= $this->access;
+        if($this->static){
+            $dump .= " static";
+        }
+        $dump.= ' $'. $this->name;
         if($this->hasDefault){
             $dump .= " = ";
             $dump .= $this->defaultValueHelper->convertValueToString($this->defaultValue);
@@ -118,6 +124,14 @@ class Parameter implements IParameter{
      */
     public function setDescription($description){
         $this->description = trim(strval($description));
+    }
+    
+    public function setStatic($static) {
+        if($static === true){
+            $this->static = true;
+        }else{
+            $this->static = false;
+        }
     }
 
 }

@@ -78,6 +78,27 @@ class ClassBuilder implements IClassBuilder {
         $name.=$this->name;
         return $name;
     }
+    
+    /**
+     * @return array containing IParameter
+     */
+    public function getParameters(){
+        return $this->parameters;
+    }
+    
+    /**
+     * @return array containing IMethod
+     */
+    public function getMethods(){
+        return $this->methods;
+    }
+    
+    /**
+     * @return array containing Interface names
+     */
+    public function getInterfaceNames(){
+        return $this->interfaces;
+    }
 
     /**
      * returns string that can be used to declare class

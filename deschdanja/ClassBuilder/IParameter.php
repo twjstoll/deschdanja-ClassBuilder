@@ -55,5 +55,11 @@ interface IParameter {
      * @param string $description
      */
     public function setDescription($description);
+    
+    /**
+     * set whether parameter is static or not
+     * @param bool $static
+     */
+    public function setStatic($static);
 }
 ?>

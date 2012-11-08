@@ -1,0 +1,19 @@
+{
+    "name": "deschdanja/deschdanja-a-o-p",
+    "description": "Description of project deschdanja-AOP.",
+    "authors": [
+        {
+            "name": "Theodor Stoll",
+            "email": "theodor@deschdanja.ch"
+        }
+    ],
+    "license": "Apache-2.0",
+        
+    "autoload": {
+        "psr-0": {
+            "deschdanja": ""
+        }
+    }
+
+
+}
